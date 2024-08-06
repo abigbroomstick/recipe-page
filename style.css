@@ -1,0 +1,182 @@
+/* CSS Reset */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    
+    /* Neutral colors */
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%)
+}
+
+/* Styling starts from here */
+ul, ol {
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Young Serif', serif;
+    line-height: 1.2;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--Nutmeg);
+    margin-bottom: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--Wenge-Brown);
+    background-color: var(--Eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recipe-title {
+    color: var(--Dark-Charcoal);
+    font-size: 2.5rem;
+}
+
+.prep-time h3 {
+    font-size: 1.25rem;
+    color: var(--Dark-Raspberry);
+    font-family: 'Outfit',sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+span.bold {
+    font-weight: 700;
+}
+
+li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+li::marker {
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    max-width: 45em;
+    margin: 6rem 0;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.food-photo {
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+section {
+    margin-top: 1.5rem ;
+}
+
+.divider {
+    border-bottom: 1px solid var(--Light-Grey);
+    margin-top: 2rem;
+}
+
+.prep-time {
+    background-color: var(--Rose-White);
+    padding: 1.75rem;
+    margin-top: 2rem;
+    border-radius: 0.75rem;
+}
+
+.prep-time ul {
+    margin-left: 0.5rem;
+}
+
+/* styling the table */
+table {
+    width: 100%;
+    padding: 1rem;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+[data-cell= "nutrient-value"] {
+    color: var(--Nutmeg);
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.75rem;
+}
+
+tr:not(.no-divider) {
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+[data-cell= "nutrient"], [data-cell= "nutrient-value"] {
+    padding-left: 1.5rem;
+}
+
+footer{
+    position: relative;
+    bottom: 2rem;
+    font-size: 1rem; 
+    color: var(--Dark-Charcoal);
+    text-align: center;
+    margin: 2rem;
+}
+
+footer .credit {
+    text-decoration: none;
+    color: var(--Nutmeg);
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+        padding: 0
+    }
+
+    .food-photo {
+        border-radius: 0;
+    }
+
+    .content{
+        padding: 0 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .recipe-title {
+        font-size: 2.2rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
