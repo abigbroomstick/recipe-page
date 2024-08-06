@@ -41,7 +41,7 @@ I started by visualizing and structuring the HTML so that each section is logica
 
 ### What I learned
 
-By tackling this challenge, I learned how to use grid more effectively and especially familiarizing myself with tables and lists as I haven't got many opportunities using them.
+By tackling this challenge, I learned how to use grid more effectively and especially familiarizing myself with tables and lists as I haven't got many opportunities using them. Moreover, this is the first challenge that I used variables and custom properties. I think they are super useful when making a responsive website.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
