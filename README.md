@@ -26,8 +26,8 @@ This is a front-end challenge from Frontend Mentor. The task is to build out a r
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/abigbroomstick/recipe-page](https://github.com/abigbroomstick/recipe-page)
+- Live Site URL: [https://abigbroomstick.github.io/recipe-page/](https://abigbroomstick.github.io/recipe-page/)
 
 ## My process
 I started by visualizing and structuring the HTML so that each section is logically organized. I then styled the page using CSS and color scheme provided in the style guide, focusing on making it responsive and looking as close as possible to the design photos.
